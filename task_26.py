@@ -1,6 +1,9 @@
-def rec():
-    a = int(input("Введите число А: "))
-    b = int(input("Введите число B: "))
-    return a ** b
+def exponentiation(a, b):
+    if (b == 1):
+        return (a)
+    if (b != 1):
+        return (a * exponentiation(a, b - 1))
+a = int(input("Введите число A: "))
+b = int(input("Введите число B: "))
 
-print(rec())
+print(exponentiation(a, b))
